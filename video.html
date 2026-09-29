@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Video — M Sharieff</title><link rel="stylesheet" href="styles.css"></head><body id="top"><div class="site page-transition">
+<header class="nav"><a class="brand" href="index.html">M Sharieff</a><nav class="links"><a href="index.html">Home</a><a href="work.html">Work</a><a class="active" href="blog.html">Blog</a><a href="contact.html">Contact</a></nav><a class="top-cta" href="mailto:abdirahmanhassanmahamd10@gmail.com">Let’s Work Together</a><button class="menu" aria-label="Menu">☰</button></header>
+<main><section class="video-hero container"><div class="video-shell"><span class="meta" id="videoMeta"></span><h1 id="videoTitle"></h1><p class="lead" id="videoLead"></p><div class="video-frame"><a id="videoLink" href="#" target="_blank" rel="noopener" aria-label="Open video">▶</a></div><p class="video-note">Add your YouTube, Vimeo, or hosted video URL to this page when the video is ready.</p><a class="back-link" href="blog.html">← Back to Blog</a></div></section></main>
+<section class="footer-cta" aria-label="Start a project"><div class="footer-cta-inner"><div class="footer-cta-kicker">Have a project in mind?</div><h2>Let’s create something <span class="accent">meaningful.</span></h2><a class="footer-cta-button" href="contact.html">Get in Touch ↗</a></div></section>
+<footer class="footer"><div class="footer-inner"><div><a class="brand" href="index.html">M Sharieff</a><p>Graphic Designer · UI/UX Designer</p></div><div><b>Explore</b><a href="index.html">Home</a><a href="work.html">Work</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div><div><b>Expertise</b><span>Graphic Design</span><span>UI/UX Design</span><span>Social Media</span><span>Creative Coding</span></div><div><b>Connect</b><a href="mailto:abdirahmanhassanmahamd10@gmail.com">Email</a></div></div><div class="footer-bottom">© 2026 M Sharieff. All rights reserved.<a href="#top">Back to top ↑</a></div></footer>
+</div>
+<script>
+const posts={
+1:{meta:'Design · Video',title:'Turning critique into creative opportunities',lead:'A short visual breakdown of how feedback can strengthen the design process.',url:'#'},
+2:{meta:'UI/UX · Video',title:'Why user experience starts before the screen',lead:'A visual walkthrough of the thinking behind user-focused interface design.',url:'#'},
+3:{meta:'Creative Growth · Video',title:'What I’m learning as a designer and AI student',lead:'A short video about design, AI, experimentation, and creative growth.',url:'#'}
+};
+const p=posts[new URLSearchParams(location.search).get('post')]||posts[1];
+document.getElementById('videoMeta').textContent=p.meta;document.getElementById('videoTitle').textContent=p.title;document.getElementById('videoLead').textContent=p.lead;document.getElementById('videoLink').href=p.url;
+</script></body></html>
