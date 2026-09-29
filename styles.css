@@ -2088,3 +2088,41 @@ textarea.field {
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
+
+
+/* Hero portrait fix v5: use a real image element so GitHub Pages cannot
+   lose the portrait because of a CSS background-image cache/path issue. */
+.hero-art { z-index: 1; }
+.hero-image {
+  display: block !important;
+  z-index: 1;
+  width: min(610px, 48vw) !important;
+  height: 600px !important;
+  top: 10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  background: none !important;
+  background-image: none !important;
+  filter: contrast(1.05) !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%) !important;
+  mask-image: linear-gradient(to bottom, #000 72%, transparent 100%) !important;
+}
+.hero-copy { z-index: 2 !important; }
+@media (max-width: 900px) {
+  .hero-image {
+    width: min(520px, 100vw) !important;
+    height: 500px !important;
+    top: 10px !important;
+  }
+}
+@media (max-width: 600px) {
+  .hero-image {
+    width: min(390px, 100vw) !important;
+    height: 400px !important;
+    top: 5px !important;
+  }
+}
